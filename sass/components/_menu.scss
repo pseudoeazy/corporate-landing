@@ -1,0 +1,29 @@
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3.75rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    color: $color-black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 1.575rem */
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.header {
+  min-height: 87.15vh;
+  background-image: linear-gradient(
+    182deg,
+    $color-white 21.82%,
+    $color-primary-light-1 91.58%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75.2vh);
+  border-bottom-right-radius: 5rem;
+
+  &__content {
+    padding-top: 5rem;
+  }
+
+  &__info {
+    display: flex;
+    margin-top: 7rem;
+    padding-left: 7rem;
+  }
+
+  &__title {
+    width: 20rem;
+    color: $color-black;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.85rem;
+    letter-spacing: 0.0825rem;
+
+    & span {
+      font-weight: 500;
+    }
+    & strong {
+      font-weight: 700;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.81rem;
+
+    & span {
+      display: inline-block;
+      max-width: 20.25rem;
+      margin-bottom: 2.38rem;
+      padding-left: 1.25rem;
+      border-left: 2px solid $color-primary;
+      color: $color-black;
+      font-family: Montserrat;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.575rem;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__header-logo {
+    color: $color-black;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.575rem;
+  }
+
+  &__menu {
+    display: flex;
+  }
+}
